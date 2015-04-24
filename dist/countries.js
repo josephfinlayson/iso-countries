@@ -8,9 +8,12 @@
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = iso;
+  } else if (typeof define !== 'undefined' && define.amd) {
+    define('isoCountriesCurrencies',[], function(){return iso;})
   } else {
-    root.iso = iso;
+   root.iso = iso
   }
+
 
   iso.noConflict = function() {
     root.iso = previous_iso;
@@ -4938,6 +4941,7 @@
   "EUR": {
     "value": "EUR",
     "name": "EUR",
+    "symbol": "€",
     "countries": [
       "AD",
       "AT",
@@ -4968,28 +4972,28 @@
       "TF",
       "VA",
       "YT"
-    ],
-    "symbol": "€"
+    ]
   },
   "AED": {
     "value": "AED",
     "name": "AED",
+    "symbol": false,
     "countries": [
       "AE"
-    ],
-    "symbol": "?"
+    ]
   },
   "AFN": {
     "value": "AFN",
     "name": "AFN",
+    "symbol": "؋",
     "countries": [
       "AF"
-    ],
-    "symbol": "؋"
+    ]
   },
   "XCD": {
     "value": "XCD",
     "name": "XCD",
+    "symbol": "$",
     "countries": [
       "AG",
       "AI",
@@ -4999,44 +5003,44 @@
       "LC",
       "MS",
       "VC"
-    ],
-    "symbol": "$"
+    ]
   },
   "ALL": {
     "value": "ALL",
     "name": "ALL",
+    "symbol": "L",
     "countries": [
       "AL"
-    ],
-    "symbol": "L"
+    ]
   },
   "AMD": {
     "value": "AMD",
     "name": "AMD",
+    "symbol": false,
     "countries": [
       "AM"
-    ],
-    "symbol": "?"
+    ]
   },
   "ANG": {
     "value": "ANG",
     "name": "ANG",
+    "symbol": "ƒ",
     "countries": [
       "AN"
-    ],
-    "symbol": "ƒ"
+    ]
   },
   "AOA": {
     "value": "AOA",
     "name": "AOA",
+    "symbol": false,
     "countries": [
       "AO"
-    ],
-    "symbol": "?"
+    ]
   },
   "null": {
     "value": null,
     "name": null,
+    "symbol": false,
     "countries": [
       "AQ",
       "AX",
@@ -5050,20 +5054,20 @@
       "NU",
       "PS",
       "VU"
-    ],
-    "symbol": "?"
+    ]
   },
   "ARS": {
     "value": "ARS",
     "name": "ARS",
+    "symbol": "$",
     "countries": [
       "AR"
-    ],
-    "symbol": "$"
+    ]
   },
   "USD": {
     "value": "USD",
     "name": "USD",
+    "symbol": "$",
     "countries": [
       "AS",
       "EC",
@@ -5083,12 +5087,12 @@
       "VG",
       "VI",
       "WS"
-    ],
-    "symbol": "$"
+    ]
   },
   "AUD": {
     "value": "AUD",
     "name": "AUD",
+    "symbol": "$",
     "countries": [
       "AU",
       "CC",
@@ -5097,52 +5101,52 @@
       "KI",
       "NF",
       "NR"
-    ],
-    "symbol": "$"
+    ]
   },
   "AWG": {
     "value": "AWG",
     "name": "AWG",
+    "symbol": "ƒ",
     "countries": [
       "AW"
-    ],
-    "symbol": "ƒ"
+    ]
   },
   "AZN": {
     "value": "AZN",
     "name": "AZN",
+    "symbol": "₼",
     "countries": [
       "AZ"
-    ],
-    "symbol": "₼"
+    ]
   },
   "BAM": {
     "value": "BAM",
     "name": "BAM",
+    "symbol": "KM",
     "countries": [
       "BA"
-    ],
-    "symbol": "KM"
+    ]
   },
   "BBD": {
     "value": "BBD",
     "name": "BBD",
+    "symbol": "$",
     "countries": [
       "BB"
-    ],
-    "symbol": "$"
+    ]
   },
   "BTD": {
     "value": "BTD",
     "name": "BTD",
+    "symbol": false,
     "countries": [
       "BD"
-    ],
-    "symbol": "?"
+    ]
   },
   "XOF": {
     "value": "XOF",
     "name": "XOF",
+    "symbol": false,
     "countries": [
       "BF",
       "BJ",
@@ -5152,1112 +5156,1111 @@
       "NE",
       "SN",
       "TG"
-    ],
-    "symbol": "?"
+    ]
   },
   "BGN": {
     "value": "BGN",
     "name": "BGN",
+    "symbol": "лв",
     "countries": [
       "BG"
-    ],
-    "symbol": "лв"
+    ]
   },
   "BHD": {
     "value": "BHD",
     "name": "BHD",
+    "symbol": false,
     "countries": [
       "BH"
-    ],
-    "symbol": "?"
+    ]
   },
   "BIF": {
     "value": "BIF",
     "name": "BIF",
+    "symbol": false,
     "countries": [
       "BI"
-    ],
-    "symbol": "?"
+    ]
   },
   "BMD": {
     "value": "BMD",
     "name": "BMD",
+    "symbol": "$",
     "countries": [
       "BM"
-    ],
-    "symbol": "$"
+    ]
   },
   "BND": {
     "value": "BND",
     "name": "BND",
+    "symbol": "$",
     "countries": [
       "BN"
-    ],
-    "symbol": "$"
+    ]
   },
   "BOB": {
     "value": "BOB",
     "name": "BOB",
+    "symbol": "Bs.",
     "countries": [
       "BO"
-    ],
-    "symbol": "Bs."
+    ]
   },
   "BRL": {
     "value": "BRL",
     "name": "BRL",
+    "symbol": "R$",
     "countries": [
       "BR"
-    ],
-    "symbol": "R$"
+    ]
   },
   "BSD": {
     "value": "BSD",
     "name": "BSD",
+    "symbol": "$",
     "countries": [
       "BS"
-    ],
-    "symbol": "$"
+    ]
   },
   "BTN": {
     "value": "BTN",
     "name": "BTN",
+    "symbol": false,
     "countries": [
       "BT"
-    ],
-    "symbol": "?"
+    ]
   },
   "NOK": {
     "value": "NOK",
     "name": "NOK",
+    "symbol": "kr",
     "countries": [
       "BV",
       "NO",
       "SJ"
-    ],
-    "symbol": "kr"
+    ]
   },
   "BWP": {
     "value": "BWP",
     "name": "BWP",
+    "symbol": "P",
     "countries": [
       "BW"
-    ],
-    "symbol": "P"
+    ]
   },
   "BYR": {
     "value": "BYR",
     "name": "BYR",
+    "symbol": "p.",
     "countries": [
       "BY"
-    ],
-    "symbol": "p."
+    ]
   },
   "BZD": {
     "value": "BZD",
     "name": "BZD",
+    "symbol": "BZ$",
     "countries": [
       "BZ"
-    ],
-    "symbol": "BZ$"
+    ]
   },
   "CAD": {
     "value": "CAD",
     "name": "CAD",
+    "symbol": "$",
     "countries": [
       "CA"
-    ],
-    "symbol": "$"
+    ]
   },
   "XAF": {
     "value": "XAF",
     "name": "XAF",
+    "symbol": false,
     "countries": [
       "CF",
       "CM",
       "GA",
       "TD"
-    ],
-    "symbol": "?"
+    ]
   },
   "CHF": {
     "value": "CHF",
     "name": "CHF",
+    "symbol": "Fr.",
     "countries": [
       "CH",
       "LI"
-    ],
-    "symbol": "Fr."
+    ]
   },
   "NZD": {
     "value": "NZD",
     "name": "NZD",
+    "symbol": "$",
     "countries": [
       "CK",
       "NZ",
       "PN",
       "TK"
-    ],
-    "symbol": "$"
+    ]
   },
   "CLP": {
     "value": "CLP",
     "name": "CLP",
+    "symbol": "$",
     "countries": [
       "CL"
-    ],
-    "symbol": "$"
+    ]
   },
   "CNY": {
     "value": "CNY",
     "name": "CNY",
+    "symbol": "¥",
     "countries": [
       "CN"
-    ],
-    "symbol": "¥"
+    ]
   },
   "COP": {
     "value": "COP",
     "name": "COP",
+    "symbol": "$",
     "countries": [
       "CO"
-    ],
-    "symbol": "$"
+    ]
   },
   "CRC": {
     "value": "CRC",
     "name": "CRC",
+    "symbol": "₡",
     "countries": [
       "CR"
-    ],
-    "symbol": "₡"
+    ]
   },
   "CUP": {
     "value": "CUP",
     "name": "CUP",
+    "symbol": "₱",
     "countries": [
       "CU"
-    ],
-    "symbol": "₱"
+    ]
   },
   "CVE": {
     "value": "CVE",
     "name": "CVE",
+    "symbol": false,
     "countries": [
       "CV"
-    ],
-    "symbol": "?"
+    ]
   },
   "CZK": {
     "value": "CZK",
     "name": "CZK",
+    "symbol": "Kč",
     "countries": [
       "CZ"
-    ],
-    "symbol": "Kč"
+    ]
   },
   "DJF": {
     "value": "DJF",
     "name": "DJF",
+    "symbol": false,
     "countries": [
       "DJ"
-    ],
-    "symbol": "?"
+    ]
   },
   "DKK": {
     "value": "DKK",
     "name": "DKK",
+    "symbol": "kr",
     "countries": [
       "DK",
       "FO",
       "GL"
-    ],
-    "symbol": "kr"
+    ]
   },
   "DOP": {
     "value": "DOP",
     "name": "DOP",
+    "symbol": "RD$",
     "countries": [
       "DO"
-    ],
-    "symbol": "RD$"
+    ]
   },
   "DZD": {
     "value": "DZD",
     "name": "DZD",
+    "symbol": false,
     "countries": [
       "DZ"
-    ],
-    "symbol": "?"
+    ]
   },
   "EEK": {
     "value": "EEK",
     "name": "EEK",
+    "symbol": "kr",
     "countries": [
       "EE"
-    ],
-    "symbol": "kr"
+    ]
   },
   "EGP": {
     "value": "EGP",
     "name": "EGP",
+    "symbol": "£",
     "countries": [
       "EG"
-    ],
-    "symbol": "£"
+    ]
   },
   "MAD": {
     "value": "MAD",
     "name": "MAD",
+    "symbol": false,
     "countries": [
       "EH",
       "MA"
-    ],
-    "symbol": "?"
+    ]
   },
   "ETB": {
     "value": "ETB",
     "name": "ETB",
+    "symbol": false,
     "countries": [
       "ER",
       "ET"
-    ],
-    "symbol": "?"
+    ]
   },
   "FKP": {
     "value": "FKP",
     "name": "FKP",
+    "symbol": "£",
     "countries": [
       "FK"
-    ],
-    "symbol": "£"
+    ]
   },
   "GBP": {
     "value": "GBP",
     "name": "GBP",
+    "symbol": "£",
     "countries": [
       "GB"
-    ],
-    "symbol": "£"
+    ]
   },
   "GEL": {
     "value": "GEL",
     "name": "GEL",
+    "symbol": false,
     "countries": [
       "GE"
-    ],
-    "symbol": "?"
+    ]
   },
   "GGP": {
     "value": "GGP",
     "name": "GGP",
+    "symbol": "£",
     "countries": [
       "GG"
-    ],
-    "symbol": "£"
+    ]
   },
   "GHS": {
     "value": "GHS",
     "name": "GHS",
+    "symbol": false,
     "countries": [
       "GH"
-    ],
-    "symbol": "?"
+    ]
   },
   "GIP": {
     "value": "GIP",
     "name": "GIP",
+    "symbol": "£",
     "countries": [
       "GI"
-    ],
-    "symbol": "£"
+    ]
   },
   "GMD": {
     "value": "GMD",
     "name": "GMD",
+    "symbol": false,
     "countries": [
       "GM"
-    ],
-    "symbol": "?"
+    ]
   },
   "GNF": {
     "value": "GNF",
     "name": "GNF",
+    "symbol": false,
     "countries": [
       "GN"
-    ],
-    "symbol": "?"
+    ]
   },
   "GTQ": {
     "value": "GTQ",
     "name": "GTQ",
+    "symbol": "Q",
     "countries": [
       "GT"
-    ],
-    "symbol": "Q"
+    ]
   },
   "GYD": {
     "value": "GYD",
     "name": "GYD",
+    "symbol": "$",
     "countries": [
       "GY"
-    ],
-    "symbol": "$"
+    ]
   },
   "HKD": {
     "value": "HKD",
     "name": "HKD",
+    "symbol": "$",
     "countries": [
       "HK"
-    ],
-    "symbol": "$"
+    ]
   },
   "HNL": {
     "value": "HNL",
     "name": "HNL",
+    "symbol": "L",
     "countries": [
       "HN"
-    ],
-    "symbol": "L"
+    ]
   },
   "HRK": {
     "value": "HRK",
     "name": "HRK",
+    "symbol": "kn",
     "countries": [
       "HR"
-    ],
-    "symbol": "kn"
+    ]
   },
   "HUF": {
     "value": "HUF",
     "name": "HUF",
+    "symbol": "Ft",
     "countries": [
       "HU"
-    ],
-    "symbol": "Ft"
+    ]
   },
   "IDR": {
     "value": "IDR",
     "name": "IDR",
+    "symbol": "Rp",
     "countries": [
       "ID",
       "TL"
-    ],
-    "symbol": "Rp"
+    ]
   },
   "ILS": {
     "value": "ILS",
     "name": "ILS",
+    "symbol": "₪",
     "countries": [
       "IL"
-    ],
-    "symbol": "₪"
+    ]
   },
   "IMP": {
     "value": "IMP",
     "name": "IMP",
+    "symbol": "£",
     "countries": [
       "IM"
-    ],
-    "symbol": "£"
+    ]
   },
   "INR": {
     "value": "INR",
     "name": "INR",
+    "symbol": "₹",
     "countries": [
       "IN"
-    ],
-    "symbol": "₹"
+    ]
   },
   "IQD": {
     "value": "IQD",
     "name": "IQD",
+    "symbol": false,
     "countries": [
       "IQ"
-    ],
-    "symbol": "?"
+    ]
   },
   "IRR": {
     "value": "IRR",
     "name": "IRR",
+    "symbol": "﷼",
     "countries": [
       "IR"
-    ],
-    "symbol": "﷼"
+    ]
   },
   "ISK": {
     "value": "ISK",
     "name": "ISK",
+    "symbol": "kr",
     "countries": [
       "IS"
-    ],
-    "symbol": "kr"
+    ]
   },
   "JEP": {
     "value": "JEP",
     "name": "JEP",
+    "symbol": "£",
     "countries": [
       "JE"
-    ],
-    "symbol": "£"
+    ]
   },
   "JMD": {
     "value": "JMD",
     "name": "JMD",
+    "symbol": "J$",
     "countries": [
       "JM"
-    ],
-    "symbol": "J$"
+    ]
   },
   "JOD": {
     "value": "JOD",
     "name": "JOD",
+    "symbol": false,
     "countries": [
       "JO"
-    ],
-    "symbol": "?"
+    ]
   },
   "JPY": {
     "value": "JPY",
     "name": "JPY",
+    "symbol": "¥",
     "countries": [
       "JP"
-    ],
-    "symbol": "¥"
+    ]
   },
   "KES": {
     "value": "KES",
     "name": "KES",
+    "symbol": "KSh",
     "countries": [
       "KE"
-    ],
-    "symbol": "KSh"
+    ]
   },
   "KGS": {
     "value": "KGS",
     "name": "KGS",
+    "symbol": "лв",
     "countries": [
       "KG"
-    ],
-    "symbol": "лв"
+    ]
   },
   "KHR": {
     "value": "KHR",
     "name": "KHR",
+    "symbol": "៛",
     "countries": [
       "KH"
-    ],
-    "symbol": "៛"
+    ]
   },
   "KMF": {
     "value": "KMF",
     "name": "KMF",
+    "symbol": false,
     "countries": [
       "KM"
-    ],
-    "symbol": "?"
+    ]
   },
   "KPW": {
     "value": "KPW",
     "name": "KPW",
+    "symbol": "₩",
     "countries": [
       "KP"
-    ],
-    "symbol": "₩"
+    ]
   },
   "KRW": {
     "value": "KRW",
     "name": "KRW",
+    "symbol": "₩",
     "countries": [
       "KR"
-    ],
-    "symbol": "₩"
+    ]
   },
   "KWD": {
     "value": "KWD",
     "name": "KWD",
+    "symbol": false,
     "countries": [
       "KW"
-    ],
-    "symbol": "?"
+    ]
   },
   "KYD": {
     "value": "KYD",
     "name": "KYD",
+    "symbol": "$",
     "countries": [
       "KY"
-    ],
-    "symbol": "$"
+    ]
   },
   "KZT": {
     "value": "KZT",
     "name": "KZT",
+    "symbol": "лв",
     "countries": [
       "KZ"
-    ],
-    "symbol": "лв"
+    ]
   },
   "LAK": {
     "value": "LAK",
     "name": "LAK",
+    "symbol": "₭",
     "countries": [
       "LA"
-    ],
-    "symbol": "₭"
+    ]
   },
   "LBP": {
     "value": "LBP",
     "name": "LBP",
+    "symbol": "£",
     "countries": [
       "LB"
-    ],
-    "symbol": "£"
+    ]
   },
   "LKR": {
     "value": "LKR",
     "name": "LKR",
+    "symbol": "₨",
     "countries": [
       "LK"
-    ],
-    "symbol": "₨"
+    ]
   },
   "LRD": {
     "value": "LRD",
     "name": "LRD",
+    "symbol": "$",
     "countries": [
       "LR"
-    ],
-    "symbol": "$"
+    ]
   },
   "LSL": {
     "value": "LSL",
     "name": "LSL",
+    "symbol": false,
     "countries": [
       "LS"
-    ],
-    "symbol": "?"
+    ]
   },
   "LTL": {
     "value": "LTL",
     "name": "LTL",
+    "symbol": "Lt",
     "countries": [
       "LT"
-    ],
-    "symbol": "Lt"
+    ]
   },
   "LVL": {
     "value": "LVL",
     "name": "LVL",
+    "symbol": "Ls",
     "countries": [
       "LV"
-    ],
-    "symbol": "Ls"
+    ]
   },
   "LYD": {
     "value": "LYD",
     "name": "LYD",
+    "symbol": false,
     "countries": [
       "LY"
-    ],
-    "symbol": "?"
+    ]
   },
   "MDL": {
     "value": "MDL",
     "name": "MDL",
+    "symbol": false,
     "countries": [
       "MD"
-    ],
-    "symbol": "?"
+    ]
   },
   "MNK": {
     "value": "MNK",
     "name": "MNK",
+    "symbol": false,
     "countries": [
       "MM"
-    ],
-    "symbol": "?"
+    ]
   },
   "MNT": {
     "value": "MNT",
     "name": "MNT",
+    "symbol": "₮",
     "countries": [
       "MN"
-    ],
-    "symbol": "₮"
+    ]
   },
   "MOP": {
     "value": "MOP",
     "name": "MOP",
+    "symbol": false,
     "countries": [
       "MO"
-    ],
-    "symbol": "?"
+    ]
   },
   "MRO": {
     "value": "MRO",
     "name": "MRO",
+    "symbol": false,
     "countries": [
       "MR"
-    ],
-    "symbol": "?"
+    ]
   },
   "MUR": {
     "value": "MUR",
     "name": "MUR",
+    "symbol": "₨",
     "countries": [
       "MU"
-    ],
-    "symbol": "₨"
+    ]
   },
   "MVR": {
     "value": "MVR",
     "name": "MVR",
+    "symbol": false,
     "countries": [
       "MV"
-    ],
-    "symbol": "?"
+    ]
   },
   "MWK": {
     "value": "MWK",
     "name": "MWK",
+    "symbol": false,
     "countries": [
       "MW"
-    ],
-    "symbol": "?"
+    ]
   },
   "MXN": {
     "value": "MXN",
     "name": "MXN",
+    "symbol": "$",
     "countries": [
       "MX"
-    ],
-    "symbol": "$"
+    ]
   },
   "MYR": {
     "value": "MYR",
     "name": "MYR",
+    "symbol": "RM",
     "countries": [
       "MY"
-    ],
-    "symbol": "RM"
+    ]
   },
   "MZN": {
     "value": "MZN",
     "name": "MZN",
+    "symbol": "MT",
     "countries": [
       "MZ"
-    ],
-    "symbol": "MT"
+    ]
   },
   "NAD": {
     "value": "NAD",
     "name": "NAD",
+    "symbol": "$",
     "countries": [
       "NA"
-    ],
-    "symbol": "$"
+    ]
   },
   "XPF": {
     "value": "XPF",
     "name": "XPF",
+    "symbol": false,
     "countries": [
       "NC",
       "PF",
       "WF"
-    ],
-    "symbol": "?"
+    ]
   },
   "NGN": {
     "value": "NGN",
     "name": "NGN",
+    "symbol": "₦",
     "countries": [
       "NG"
-    ],
-    "symbol": "₦"
+    ]
   },
   "NIO": {
     "value": "NIO",
     "name": "NIO",
+    "symbol": "C$",
     "countries": [
       "NI"
-    ],
-    "symbol": "C$"
+    ]
   },
   "NPR": {
     "value": "NPR",
     "name": "NPR",
+    "symbol": "₨",
     "countries": [
       "NP"
-    ],
-    "symbol": "₨"
+    ]
   },
   "OMR": {
     "value": "OMR",
     "name": "OMR",
+    "symbol": "﷼",
     "countries": [
       "OM"
-    ],
-    "symbol": "﷼"
+    ]
   },
   "PAB": {
     "value": "PAB",
     "name": "PAB",
+    "symbol": "B/.",
     "countries": [
       "PA"
-    ],
-    "symbol": "B/."
+    ]
   },
   "PEN": {
     "value": "PEN",
     "name": "PEN",
+    "symbol": "S/.",
     "countries": [
       "PE"
-    ],
-    "symbol": "S/."
+    ]
   },
   "PGK": {
     "value": "PGK",
     "name": "PGK",
+    "symbol": false,
     "countries": [
       "PG"
-    ],
-    "symbol": "?"
+    ]
   },
   "PHP": {
     "value": "PHP",
     "name": "PHP",
+    "symbol": "₱",
     "countries": [
       "PH"
-    ],
-    "symbol": "₱"
+    ]
   },
   "PKR": {
     "value": "PKR",
     "name": "PKR",
+    "symbol": "₨",
     "countries": [
       "PK"
-    ],
-    "symbol": "₨"
+    ]
   },
   "PLN": {
     "value": "PLN",
     "name": "PLN",
+    "symbol": "zł",
     "countries": [
       "PL"
-    ],
-    "symbol": "zł"
+    ]
   },
   "PYG": {
     "value": "PYG",
     "name": "PYG",
+    "symbol": "Gs",
     "countries": [
       "PY"
-    ],
-    "symbol": "Gs"
+    ]
   },
   "QAR": {
     "value": "QAR",
     "name": "QAR",
+    "symbol": "﷼",
     "countries": [
       "QA"
-    ],
-    "symbol": "﷼"
+    ]
   },
   "RON": {
     "value": "RON",
     "name": "RON",
+    "symbol": "lei",
     "countries": [
       "RO"
-    ],
-    "symbol": "lei"
+    ]
   },
   "RSD": {
     "value": "RSD",
     "name": "RSD",
+    "symbol": "Дин.",
     "countries": [
       "RS"
-    ],
-    "symbol": "Дин."
+    ]
   },
   "RUB": {
     "value": "RUB",
     "name": "RUB",
+    "symbol": "₽",
     "countries": [
       "RU"
-    ],
-    "symbol": "₽"
+    ]
   },
   "RWF": {
     "value": "RWF",
     "name": "RWF",
+    "symbol": false,
     "countries": [
       "RW"
-    ],
-    "symbol": "?"
+    ]
   },
   "SAR": {
     "value": "SAR",
     "name": "SAR",
+    "symbol": "﷼",
     "countries": [
       "SA"
-    ],
-    "symbol": "﷼"
+    ]
   },
   "SBD": {
     "value": "SBD",
     "name": "SBD",
+    "symbol": "$",
     "countries": [
       "SB"
-    ],
-    "symbol": "$"
+    ]
   },
   "SCR": {
     "value": "SCR",
     "name": "SCR",
+    "symbol": "₨",
     "countries": [
       "SC"
-    ],
-    "symbol": "₨"
+    ]
   },
   "SDG": {
     "value": "SDG",
     "name": "SDG",
+    "symbol": false,
     "countries": [
       "SD"
-    ],
-    "symbol": "?"
+    ]
   },
   "SEK": {
     "value": "SEK",
     "name": "SEK",
+    "symbol": "kr",
     "countries": [
       "SE"
-    ],
-    "symbol": "kr"
+    ]
   },
   "SGD": {
     "value": "SGD",
     "name": "SGD",
+    "symbol": "$",
     "countries": [
       "SG"
-    ],
-    "symbol": "$"
+    ]
   },
   "SHP": {
     "value": "SHP",
     "name": "SHP",
+    "symbol": "£",
     "countries": [
       "SH"
-    ],
-    "symbol": "£"
+    ]
   },
   "SLL": {
     "value": "SLL",
     "name": "SLL",
+    "symbol": false,
     "countries": [
       "SL"
-    ],
-    "symbol": "?"
+    ]
   },
   "SOS": {
     "value": "SOS",
     "name": "SOS",
+    "symbol": "S",
     "countries": [
       "SO"
-    ],
-    "symbol": "S"
+    ]
   },
   "SRD": {
     "value": "SRD",
     "name": "SRD",
+    "symbol": "$",
     "countries": [
       "SR"
-    ],
-    "symbol": "$"
+    ]
   },
   "STD": {
     "value": "STD",
     "name": "STD",
+    "symbol": false,
     "countries": [
       "ST"
-    ],
-    "symbol": "?"
+    ]
   },
   "SYP": {
     "value": "SYP",
     "name": "SYP",
+    "symbol": "£",
     "countries": [
       "SY"
-    ],
-    "symbol": "£"
+    ]
   },
   "SZL": {
     "value": "SZL",
     "name": "SZL",
+    "symbol": false,
     "countries": [
       "SZ"
-    ],
-    "symbol": "?"
+    ]
   },
   "THB": {
     "value": "THB",
     "name": "THB",
+    "symbol": "฿",
     "countries": [
       "TH"
-    ],
-    "symbol": "฿"
+    ]
   },
   "TJS": {
     "value": "TJS",
     "name": "TJS",
+    "symbol": false,
     "countries": [
       "TJ"
-    ],
-    "symbol": "?"
+    ]
   },
   "TMT": {
     "value": "TMT",
     "name": "TMT",
+    "symbol": false,
     "countries": [
       "TM"
-    ],
-    "symbol": "?"
+    ]
   },
   "TND": {
     "value": "TND",
     "name": "TND",
+    "symbol": false,
     "countries": [
       "TN"
-    ],
-    "symbol": "?"
+    ]
   },
   "TOP": {
     "value": "TOP",
     "name": "TOP",
+    "symbol": false,
     "countries": [
       "TO"
-    ],
-    "symbol": "?"
+    ]
   },
   "TRY": {
     "value": "TRY",
     "name": "TRY",
+    "symbol": false,
     "countries": [
       "TR"
-    ],
-    "symbol": "?"
+    ]
   },
   "TTD": {
     "value": "TTD",
     "name": "TTD",
+    "symbol": "TT$",
     "countries": [
       "TT"
-    ],
-    "symbol": "TT$"
+    ]
   },
   "TVD": {
     "value": "TVD",
     "name": "TVD",
+    "symbol": "$",
     "countries": [
       "TV"
-    ],
-    "symbol": "$"
+    ]
   },
   "TWD": {
     "value": "TWD",
     "name": "TWD",
+    "symbol": "NT$",
     "countries": [
       "TW"
-    ],
-    "symbol": "NT$"
+    ]
   },
   "TZS": {
     "value": "TZS",
     "name": "TZS",
+    "symbol": "TSh",
     "countries": [
       "TZ"
-    ],
-    "symbol": "TSh"
+    ]
   },
   "UAH": {
     "value": "UAH",
     "name": "UAH",
+    "symbol": "₴",
     "countries": [
       "UA"
-    ],
-    "symbol": "₴"
+    ]
   },
   "UGX": {
     "value": "UGX",
     "name": "UGX",
+    "symbol": "USh",
     "countries": [
       "UG"
-    ],
-    "symbol": "USh"
+    ]
   },
   "UYU": {
     "value": "UYU",
     "name": "UYU",
+    "symbol": "$U",
     "countries": [
       "UY"
-    ],
-    "symbol": "$U"
+    ]
   },
   "UZS": {
     "value": "UZS",
     "name": "UZS",
+    "symbol": "лв",
     "countries": [
       "UZ"
-    ],
-    "symbol": "лв"
+    ]
   },
   "VEF": {
     "value": "VEF",
     "name": "VEF",
+    "symbol": "Bs",
     "countries": [
       "VE"
-    ],
-    "symbol": "Bs"
+    ]
   },
   "VND": {
     "value": "VND",
     "name": "VND",
+    "symbol": "₫",
     "countries": [
       "VN"
-    ],
-    "symbol": "₫"
+    ]
   },
   "YER": {
     "value": "YER",
     "name": "YER",
+    "symbol": "﷼",
     "countries": [
       "YE"
-    ],
-    "symbol": "﷼"
+    ]
   },
   "ZAR": {
     "value": "ZAR",
     "name": "ZAR",
+    "symbol": "R",
     "countries": [
       "ZA"
-    ],
-    "symbol": "R"
+    ]
   },
   "ZMK": {
     "value": "ZMK",
     "name": "ZMK",
+    "symbol": false,
     "countries": [
       "ZM"
-    ],
-    "symbol": "?"
+    ]
   },
   "ZWD": {
     "value": "ZWD",
     "name": "ZWD",
+    "symbol": "Z$",
     "countries": [
       "ZW"
-    ],
-    "symbol": "Z$"
+    ]
   }
 };
 

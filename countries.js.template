@@ -8,9 +8,12 @@
 
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = iso;
+  } else if (typeof define !== 'undefined' && define.amd) {
+    define('isoCountriesCurrencies',[], function(){return iso;})
   } else {
-    root.iso = iso;
+   root.iso = iso
   }
+
 
   iso.noConflict = function() {
     root.iso = previous_iso;
