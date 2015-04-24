@@ -1,28 +1,24 @@
 {
   "name": "iso-countries",
   "description": "ISO Country and Currency Codes",
-  "version": "0.0.5",
-  "author": "Paul Smith <psmithuk@gmail.com>",
+  "version": "0.0.1",
+  "author": "Joseph Finlayson <joseph.finlayson@gmail.com>",
   "private": false,
   "engines": {
     "node": ">= 0.6.0"
   },
   "dependencies": {
-    "colors": "0.5.x",
-    "commander": "",
-    "request": "*",
-    "underscore": "1.x.x",
-    "uglify-js": "",
-    "js-yaml": "",
-    "should": "~2.1.0"
   },
   "devDependencies": {
+    "grunt-contrib-uglify": "~0.6.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-env": "~0.4.1",
     "mocha": "*",
     "should": "*"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/psmithuk/iso-countries"
+    "url": "git://github.com/josephfinlayson/iso-countries"
   },
   "directories": {
     "doc": "./doc",
