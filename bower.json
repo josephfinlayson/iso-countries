@@ -1,12 +1,12 @@
 {
-  "name": "iso-countries-currencies",
+  "name": "iso-countries",
   "main": "dist/countries.min.js",
   "version": "0.0.1",
   "homepage": "https://github.com/josephfinlayson/iso-countries",
   "authors": [
     "josephfinlayson <josephfinlayson@gmail.com>"
   ],
-  "description": "ISO Country and Currency Codes for Angular.js",
+  "description": "ISO Country and Currency Codes",
   "keywords": [
     "angular.js",
     "countries"

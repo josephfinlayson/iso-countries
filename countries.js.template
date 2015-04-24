@@ -9,7 +9,7 @@
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = iso;
   } else if (typeof define !== 'undefined' && define.amd) {
-    define('isoCountriesCurrencies',[], function(){return iso;})
+    define('isoCountries',[], function(){return iso;})
   } else {
    root.iso = iso
   }
